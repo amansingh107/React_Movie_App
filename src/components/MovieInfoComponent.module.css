@@ -1,0 +1,88 @@
+/* MovieInfoComponent.module.css */
+.container {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 30px;
+    justify-content: center;
+    border-bottom: 1px solid lightgray;
+  }
+  
+  .coverImage {
+    margin-top:50px;
+    object-fit: cover;
+    height: 350px;
+  }
+  
+  .infoColumn {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  }
+  
+  .movieName {
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    margin: 15px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-transform: capitalize;
+    text-overflow: ellipsis;
+  }
+  
+  .movieName span {
+    opacity: 0.8;
+  }
+  
+  .movieInfo {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    overflow: hidden;
+    margin: 4px 0;
+    text-transform: capitalize;
+    text-overflow: ellipsis;
+  }
+  
+  .movieInfo span {
+    opacity: 0.5;
+  }
+  
+  .close {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background: lightgray;
+    height: fit-content;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  
+
+
+  @media screen and (max-width: 768px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .coverImage {
+      /* Adjust cover image styles for smaller devices */
+      width: 100%;
+      height: auto;
+    }
+  
+    .infoColumn {
+      /* Adjust info column styles for smaller devices */
+      margin-top: 20px; /* Add some space between cover image and info column */
+      text-align: center; /* Center align text */
+    }
+  
+    .close {
+      /* Adjust close button styles for smaller devices */
+      margin-top: 20px; /* Add some space below info column */
+    }
+  }
